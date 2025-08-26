@@ -1,0 +1,15 @@
+/* globals.css */
+
+/* En lugar de @tailwind base */
+@import 'tailwindcss/preflight';
+
+/* En lugar de @tailwind components */
+@import 'tailwindcss/theme';
+
+/* En lugar de @tailwind utilities */
+@import 'tailwindcss/utilities';
+
+/* Tipografía corporativa */
+body {
+	@apply bg-gray-50 text-gray-900 font-sans;
+}

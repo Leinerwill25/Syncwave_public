@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/packSocios/route": "/api/packSocios",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/w/cliente/page": "/w/cliente",
+  "/w/colaborador/page": "/w/colaborador",
+  "/w/inversor/page": "/w/inversor",
+  "/w/socio/page": "/w/socio"
+}

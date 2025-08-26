@@ -1,5 +1,4 @@
 // app/w/inversor/page.tsx
-import CTAButtons from '@/components/CTAButtons';
 import Image from 'next/image';
 
 export const metadata = {

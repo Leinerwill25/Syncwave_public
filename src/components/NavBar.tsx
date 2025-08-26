@@ -151,7 +151,6 @@ export default function NavBar({ logoSrc = '/3.png', whatsappNumbers = ['+58 424
 	const [openModal, setOpenModal] = useState(false);
 	const buttonRef = useRef<HTMLButtonElement | null>(null);
 	const [anchorRect, setAnchorRect] = useState<DOMRect | null>(null);
-	const portalRef = useRef<HTMLDivElement | null>(null); // for click outside detection
 
 	// Recompute anchorRect when opening
 	useEffect(() => {

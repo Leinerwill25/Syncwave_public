@@ -146,7 +146,7 @@ function DropdownPortal({ anchorRect, onClose, children, preferredWidth = 256 }:
 	);
 }
 
-export default function NavBar({ logoSrc = '/3.png', whatsappNumbers = ['+58 424 2070878', '+58 412 4885623'], siteUrl = 'https://syncwave.com.ve' }: NavBarProps) {
+export default function NavBar({ logoSrc = '/3.png', whatsappNumbers = ['+58 424 2070878', '+58 412 4885623'], siteUrl = 'https://syncwave-public.vercel.app/' }: NavBarProps) {
 	const [openDropdown, setOpenDropdown] = useState(false);
 	const [openModal, setOpenModal] = useState(false);
 	const buttonRef = useRef<HTMLButtonElement | null>(null);

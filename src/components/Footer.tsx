@@ -20,7 +20,7 @@ export function Footer({ logoSrc = '/3.png', instagram = 'syncwave_agency', emai
 				{/* Logo y descripción */}
 				<div className="flex flex-col gap-3">
 					<div className="relative w-40 h-10">
-						<Image src={'logoSrc'} alt="Syncwave logo" fill sizes="160px" className="object-contain" />
+						<Image src={logoSrc} alt="Syncwave logo" fill sizes="160px" className="object-contain" />
 					</div>
 					<p className="text-sm text-slate-300">Agencia de automatizaciones. Diseñamos flujos, integraciones y experiencias digitales que hacen que tu empresa funcione con menos esfuerzo.</p>
 					<p className="text-xs text-slate-500 mt-2">© {new Date().getFullYear()} Syncwave. Todos los derechos reservados.</p>

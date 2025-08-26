@@ -1,7 +1,7 @@
 // app/w/layout.tsx
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import '../../public/globals.css'; // conserva tu path actual si funciona en tu proyecto
+import '../../public/globals.css';
 
 import Navbar from '@/components/NavBar';
 import Footer from '@/components/Footer';

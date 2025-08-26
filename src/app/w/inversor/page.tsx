@@ -54,7 +54,7 @@ export default function InversorPage() {
 							</a>
 
 							<a href="https://calendly.com/leinerwill25/30min" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 px-5 py-3 rounded-lg border border-slate-200 text-slate-800 bg-white hover:bg-slate-50 transition">
-								Agendar pitch 20'
+								Agendar pitch 20
 							</a>
 						</div>
 
@@ -313,7 +313,7 @@ export default function InversorPage() {
 						</a>
 
 						<a className="inline-flex items-center gap-3 px-5 py-3 rounded-lg border border-slate-200 text-slate-800" href="https://calendly.com/leinerwill25/30min" target="_blank" rel="noreferrer">
-							Agendar pitch 20'
+							Agendar pitch 20
 						</a>
 						<a className="inline-flex items-center gap-3 px-5 py-3 rounded-lg bg-white border border-slate-200 text-slate-800" href="https://api.whatsapp.com/send/?phone=584242070878" target="_blank" rel="noreferrer">
 							Contactar por WhatsApp

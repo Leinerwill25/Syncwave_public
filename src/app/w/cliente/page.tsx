@@ -226,7 +226,7 @@ export default function ClientePage() {
 
 					<div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
 						<blockquote className="p-4 border rounded-lg bg-gray-50">
-							<p className="text-sm text-slate-700">“Antes transcribíamos tasas manualmente cada día; ahora todo se actualiza automáticamente en 3 minutos. Ahorro enorme de tiempo y cero errores.”</p>
+							<p className="text-sm text-slate-700">&quot;Antes transcribíamos tasas manualmente cada día; ahora todo se actualiza automáticamente en 3 minutos. Ahorro enorme de tiempo y cero errores.&quot;</p>
 							<footer className="mt-3 text-xs text-slate-500">— Empresa financiera</footer>
 						</blockquote>
 

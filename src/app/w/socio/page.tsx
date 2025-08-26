@@ -297,7 +297,7 @@ export default function SocioPage() {
 
 					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
 						<blockquote className="p-4 border rounded-lg bg-gray-50">
-							<p className="text-sm text-slate-700">"Al asociarnos con Syncwave pudimos cerrar integraciones que antes rechazábamos por falta de recursos técnicos. El partner pack y el POC nos ayudaron a ganar la venta."</p>
+							<p className="text-sm text-slate-700">“Al asociarnos con Syncwave pudimos cerrar integraciones que antes rechazábamos por falta de recursos técnicos. El partner pack y el POC nos ayudaron a ganar la venta.”</p>
 							<footer className="mt-3 text-xs text-slate-500">— Agencia integradora (LATAM)</footer>
 						</blockquote>
 

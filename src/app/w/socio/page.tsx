@@ -127,40 +127,93 @@ export default function SocioPage() {
 				</div>
 			</section>
 
-			{/* FAST BENEFITS */}
+			{/* FAST BENEFITS (refinado) */}
 			<section className="max-w-6xl mx-auto px-6 pb-8">
 				<div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-					<article className="rounded-2xl bg-white p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
-						<p className="text-xs text-slate-500">Monetización</p>
-						<h3 className="mt-3 text-2xl font-extrabold text-slate-900">Nuevas líneas de ingreso</h3>
-						<p className="mt-2 text-sm text-slate-600">Ofrece integraciones y servicios sin aumentar plantilla.</p>
+					{/* CARD 1 */}
+					<article className="relative rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-100 hover:shadow-2xl transform hover:-translate-y-1 transition">
+						<div className="flex items-start gap-4">
+							<div className="flex-shrink-0">
+								<div className="w-12 h-12 rounded-lg bg-gradient-to-br from-slate-800 to-sky-600 grid place-items-center text-white shadow">
+									<svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden>
+										<path d="M12 8v8M8 12h8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+									</svg>
+								</div>
+							</div>
+
+							<div>
+								<p className="text-xs uppercase tracking-wider text-slate-500">Monetización</p>
+								<h3 className="mt-2 text-xl font-semibold text-slate-900 leading-tight">Nuevas líneas de ingreso</h3>
+								<p className="mt-3 text-sm text-slate-600 max-w-prose">Ofrece integraciones y servicios sin aumentar plantilla, con modelos escalables y soporte técnico.</p>
+
+								<div className="mt-4 flex items-center gap-3">
+									<span className="inline-flex items-center px-2 py-1 rounded-full bg-slate-50 text-xs font-medium text-slate-700 ring-1 ring-slate-100">B2B</span>
+									<span className="text-xs text-slate-400">Modelos: referral · white-label · revenue-share</span>
+								</div>
+							</div>
+						</div>
 					</article>
 
-					<article className="rounded-2xl bg-white p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
-						<p className="text-xs text-slate-500">Velocidad</p>
-						<h3 className="mt-3 text-2xl font-extrabold text-slate-900">POC en 1 semana</h3>
-						<p className="mt-2 text-sm text-slate-600">Valida negocio y cierra con rapidez.</p>
+					{/* CARD 2 */}
+					<article className="relative rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-100 hover:shadow-2xl transform hover:-translate-y-1 transition">
+						<div className="flex items-start gap-4">
+							<div className="flex-shrink-0">
+								<div className="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-sky-500 grid place-items-center text-white shadow">
+									<svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden>
+										<path d="M3 12h18M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+									</svg>
+								</div>
+							</div>
+
+							<div>
+								<p className="text-xs uppercase tracking-wider text-slate-500">Velocidad</p>
+								<h3 className="mt-2 text-xl font-semibold text-slate-900 leading-tight">POC en 1 semana</h3>
+								<p className="mt-3 text-sm text-slate-600 max-w-prose">Validación rápida para cerrar oportunidades comerciales con evidencia técnica y resultados.</p>
+
+								<div className="mt-4 flex items-center gap-3">
+									<span className="inline-flex items-center px-2 py-1 rounded-full bg-slate-50 text-xs font-medium text-slate-700 ring-1 ring-slate-100">Low friction</span>
+									<span className="text-xs text-slate-400">Entrega, test y demo</span>
+								</div>
+							</div>
+						</div>
 					</article>
 
-					<article className="rounded-2xl p-6 shadow-lg text-white bg-gradient-to-r from-sky-600 to-indigo-600 border border-transparent transform transition hover:scale-[1.01]">
-						<p className="text-xs opacity-90">Soporte</p>
-						<h3 className="mt-3 text-2xl font-extrabold">SLA & Co-selling</h3>
-						<p className="mt-2 text-sm opacity-90">Acuerdos de nivel de servicio y soporte conjunto.</p>
+					{/* CARD 3 (destacado) */}
+					<article className="relative rounded-2xl p-6 shadow-2xl text-white bg-gradient-to-r from-sky-600 to-indigo-600 border border-transparent transform transition hover:scale-[1.01]">
+						<div className="flex items-start gap-4">
+							<div className="flex-shrink-0">
+								<div className="w-12 h-12 rounded-lg bg-white/10 grid place-items-center text-white shadow">
+									<svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden>
+										<path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+									</svg>
+								</div>
+							</div>
+
+							<div>
+								<p className="text-xs opacity-90 uppercase tracking-wider">Soporte</p>
+								<h3 className="mt-2 text-2xl font-extrabold leading-tight">SLA & Co-selling</h3>
+								<p className="mt-3 text-sm opacity-90 max-w-prose">Acuerdos comerciales y técnicos que garantizan cobertura y co-venta efectiva para tus clientes.</p>
+
+								<div className="mt-4 flex items-center gap-3">
+									<span className="inline-flex items-center px-2 py-1 rounded-full bg-white/10 text-xs font-medium text-white/90 ring-1 ring-white/10">SLA 24/7</span>
+									<span className="text-xs text-white/80">Planes personalizados</span>
+								</div>
+							</div>
+						</div>
 					</article>
 				</div>
 			</section>
 
-			{/* PARTNER MODELS */}
+			{/* PARTNER MODELS (refinado) */}
 			<section id="models" className="max-w-6xl mx-auto px-6 pb-12">
-				<div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-slate-100">
+				<div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border border-slate-100">
 					<div className="flex items-start justify-between gap-6">
 						<div>
 							<h2 className="text-2xl font-bold text-slate-900">Modelos de partnership</h2>
-							<p className="mt-2 text-slate-600">Elige cómo quieres colaborar — modelos flexibles para agencias, integradores y consultoras.</p>
+							<p className="mt-2 text-slate-600 max-w-prose">Modelos flexibles para agencias, integradores y consultoras. Selecciona el que mejor encaje con tu go-to-market.</p>
 						</div>
 
 						<div className="flex gap-3 items-center">
-							{/* botón que dispara downloadPack */}
 							<button onClick={downloadPack} disabled={downloading} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-800 shadow hover:shadow-md transition disabled:opacity-60 disabled:cursor-wait">
 								{downloading ? (
 									<svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -177,172 +230,175 @@ export default function SocioPage() {
 						</div>
 					</div>
 
-					<div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-						<article className="p-4 border rounded-lg hover:shadow-md transition">
-							<h3 className="text-sm font-semibold text-slate-900">White-label (Tu marca)</h3>
-							<p className="mt-2 text-sm text-slate-600">Entregamos la solución con tu branding y procesos comerciales. Tú facturas al cliente final.</p>
-							<ul className="mt-3 text-sm text-slate-600 list-disc list-inside space-y-1">
-								<li>Soporte técnico conjunto</li>
-								<li>Training comercial para tu equipo</li>
-								<li>PA y SLA compartido</li>
-							</ul>
-						</article>
+					<div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-5">
+						{[
+							{ title: 'White-label (Tu marca)', desc: 'Entregamos la solución con tu branding. Tú facturas al cliente final.', items: ['Soporte técnico conjunto', 'Training comercial', 'PA y SLA compartido'], color: 'from-slate-800 to-sky-600' },
+							{ title: 'Referral (Comisión)', desc: 'Refiere clientes y recibe comisión por proyecto o % MRR.', items: ['POC gratuito primer referido', 'Comisión por ticket/MRR', 'Reportes de pipeline'], color: 'from-emerald-500 to-sky-400' },
+							{ title: 'Co-sell (Integración)', desc: 'Propuestas conjuntas con integración técnica y fuerza comercial combinada.', items: ['POC técnico', 'Reparto de ingresos', 'SLA y soporte conjunto'], color: 'from-violet-500 to-fuchsia-500' },
+						].map((m) => (
+							<article key={m.title} className="relative p-6 rounded-2xl bg-gradient-to-br from-white to-slate-50 border border-slate-100 hover:shadow-2xl transition">
+								<div className={`absolute -left-4 top-6 w-12 h-12 rounded-lg bg-gradient-to-br ${m.color} text-white grid place-items-center font-bold shadow`} aria-hidden>
+									{m.title.split(/\s+/)[0][0]}
+								</div>
 
-						<article className="p-4 border rounded-lg hover:shadow-md transition">
-							<h3 className="text-sm font-semibold text-slate-900">Referral (Comisión)</h3>
-							<p className="mt-2 text-sm text-slate-600">Refiere clientes a Syncwave y recibe comisión por proyecto cerrado o MRR compartido.</p>
-							<ul className="mt-3 text-sm text-slate-600 list-disc list-inside space-y-1">
-								<li>POC gratuito para tu primer referido</li>
-								<li>Comisión por cada ticket y/o % de MRR</li>
-								<li>Reportes de pipeline para partners</li>
-							</ul>
-						</article>
+								<div className="ml-12">
+									<h3 className="text-sm font-semibold text-slate-900">{m.title}</h3>
+									<p className="mt-2 text-sm text-slate-600">{m.desc}</p>
 
-						<article className="p-4 border rounded-lg hover:shadow-md transition">
-							<h3 className="text-sm font-semibold text-slate-900">Co-sell (Integración técnica)</h3>
-							<p className="mt-2 text-sm text-slate-600">Colaboramos en propuestas conjuntas, integrando nuestras capacidades técnicas con tu fuerza comercial.</p>
-							<ul className="mt-3 text-sm text-slate-600 list-disc list-inside space-y-1">
-								<li>POC técnico y demo conjunta</li>
-								<li>Acuerdos de reparto de ingresos</li>
-								<li>SLA y soporte conjunto</li>
-							</ul>
-						</article>
+									<ul className="mt-3 text-sm text-slate-600 list-disc list-inside space-y-1">
+										{m.items.map((it) => (
+											<li key={it}>{it}</li>
+										))}
+									</ul>
+								</div>
+							</article>
+						))}
 					</div>
 				</div>
 			</section>
 
-			{/* TECH STACK & INTEGRATION */}
+			{/* TECH STACK & INTEGRATION (refinado) */}
 			<section id="tech" className="max-w-6xl mx-auto px-6 pb-12">
-				<div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-slate-100">
-					<h2 className="text-2xl font-bold text-slate-900">Stack & capacidad técnica</h2>
-					<p className="mt-2 text-slate-600">Integraciones preconfiguradas y arquitectura diseñada para integradores.</p>
-
-					<div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
-						<div className="p-4 bg-slate-50 border rounded-lg text-center hover:shadow-sm transition">
-							<p className="text-sm font-semibold text-slate-800">n8n</p>
-							<p className="mt-1 text-xs text-slate-600">+200 integraciones listas</p>
+				<div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border border-slate-100">
+					<div className="flex items-center justify-between">
+						<div>
+							<h2 className="text-2xl font-bold text-slate-900">Stack & capacidad técnica</h2>
+							<p className="mt-2 text-slate-600 max-w-prose">Integraciones preconfiguradas y arquitectura diseñada para integradores y agencias.</p>
 						</div>
+						<div className="text-sm text-slate-500">Integraciones listas · Deploys flexibles</div>
+					</div>
 
-						<div className="p-4 bg-slate-50 border rounded-lg text-center hover:shadow-sm transition">
-							<p className="text-sm font-semibold text-slate-800">Scrapers / ETL</p>
-							<p className="mt-1 text-xs text-slate-600">Rotación IP, anti-bloqueo y pipelines versionadas</p>
-						</div>
-
-						<div className="p-4 bg-slate-50 border rounded-lg text-center hover:shadow-sm transition">
-							<p className="text-sm font-semibold text-slate-800">Infra & DevOps</p>
-							<p className="mt-1 text-xs text-slate-600">Docker, k8s, despliegues self-host o cloud</p>
-						</div>
+					<div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-5">
+						{[
+							{ title: 'n8n', subtitle: '+200 integraciones listas', icon: '⚙️' },
+							{ title: 'Scrapers / ETL', subtitle: 'Pipelines versionadas y anti-bloqueo', icon: '🛰️' },
+							{ title: 'Infra & DevOps', subtitle: 'Docker, k8s, self-host/cloud', icon: '☁️' },
+						].map((t) => (
+							<div key={t.title} className="p-5 rounded-2xl bg-slate-50 border border-slate-100 text-center hover:shadow-md transition">
+								<div className="text-3xl">{t.icon}</div>
+								<p className="mt-3 text-sm font-semibold text-slate-800">{t.title}</p>
+								<p className="mt-1 text-xs text-slate-500">{t.subtitle}</p>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
 
-			{/* ONBOARDING & SLA */}
+			{/* ONBOARDING & SLA (refinado) */}
 			<section id="onboard" className="max-w-6xl mx-auto px-6 pb-12">
-				<div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-slate-100">
-					<h2 className="text-2xl font-bold text-slate-900">Onboarding partner & SLA</h2>
-					<p className="mt-2 text-slate-600">Proceso diseñado para que logres ventas y entregas con la máxima calidad.</p>
-
-					<div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-						<div className="p-4 border rounded-lg hover:shadow-sm transition">
-							<h4 className="text-sm font-semibold text-slate-900">Kickoff técnico</h4>
-							<p className="mt-1 text-sm text-slate-600">Sesión de integración, acceso a repos y training técnico.</p>
+				<div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border border-slate-100">
+					<div className="flex items-center justify-between">
+						<div>
+							<h2 className="text-2xl font-bold text-slate-900">Onboarding partner & SLA</h2>
+							<p className="mt-2 text-slate-600 max-w-prose">Proceso diseñado para que logres ventas y entregas con máxima calidad y predictibilidad.</p>
 						</div>
+						<div className="text-sm text-slate-500">Tiempo medio de onboarding: 7–14 días</div>
+					</div>
 
-						<div className="p-4 border rounded-lg hover:shadow-sm transition">
-							<h4 className="text-sm font-semibold text-slate-900">Onboarding comercial</h4>
-							<p className="mt-1 text-sm text-slate-600">Materiales comerciales, pitch deck y demo flow para tu equipo.</p>
-						</div>
-
-						<div className="p-4 border rounded-lg hover:shadow-sm transition">
-							<h4 className="text-sm font-semibold text-slate-900">SLA & soporte</h4>
-							<p className="mt-1 text-sm text-slate-600">Respuesta inicial menor a 24h, soporte 24/7 y acuerdos de escalado.</p>
-						</div>
+					<div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-5">
+						{[
+							{ title: 'Kickoff técnico', desc: 'Sesión de integración, acceso a repos y training técnico.' },
+							{ title: 'Onboarding comercial', desc: 'Materiales comerciales, pitch deck y demo flow.' },
+							{ title: 'SLA & soporte', desc: 'Respuesta inicial <24h, escalado y soporte priorizado.' },
+						].map((c, idx) => (
+							<div key={c.title} className="p-6 rounded-2xl border border-slate-100 bg-white hover:shadow-lg transition">
+								<div className="flex items-center justify-between">
+									<div className="flex items-center gap-3">
+										<div className="w-10 h-10 rounded-md bg-slate-50 grid place-items-center text-slate-700 font-semibold">{idx + 1}</div>
+										<div>
+											<h4 className="text-sm font-semibold text-slate-900">{c.title}</h4>
+											<p className="mt-1 text-xs text-slate-500">{c.desc}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
 
-			{/* REVENUE EXAMPLE */}
+			{/* REVENUE EXAMPLE (refinado) */}
 			<section id="revenue" className="max-w-6xl mx-auto px-6 pb-12">
-				<div className="bg-gradient-to-tr from-white to-slate-50 rounded-2xl shadow-lg p-6 sm:p-8 border border-slate-100">
-					<h2 className="text-2xl font-bold text-slate-900">Ejemplo de reparto de ingresos</h2>
-					<p className="mt-2 text-slate-600">Modelo de muestra para partners (negociable por volumen y tipo de colaboración).</p>
+				<div className="bg-gradient-to-tr from-white to-slate-50 rounded-3xl shadow-xl p-6 sm:p-8 border border-slate-100">
+					<div className="flex items-center justify-between">
+						<div>
+							<h2 className="text-2xl font-bold text-slate-900">Ejemplo de reparto de ingresos</h2>
+							<p className="mt-2 text-slate-600">Modelo de muestra para partners (negociable por volumen y tipo de colaboración).</p>
+						</div>
+						<div className="text-sm text-slate-500">Valores ilustrativos</div>
+					</div>
 
-					<div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-						<div className="p-4 bg-white border rounded-lg text-center hover:shadow-sm transition">
+					<div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-5">
+						<div className="p-6 bg-white rounded-2xl border border-slate-100 text-center hover:shadow-lg transition">
 							<p className="text-sm text-slate-500">Ticket promedio</p>
-							<p className="mt-2 text-2xl font-extrabold text-slate-900">$300</p>
+							<p className="mt-3 text-3xl font-extrabold text-slate-900">$300</p>
 							<p className="mt-1 text-xs text-slate-500">por automatización</p>
 						</div>
 
-						<div className="p-4 bg-white border rounded-lg text-center hover:shadow-sm transition">
+						<div className="p-6 bg-white rounded-2xl border border-slate-100 text-center hover:shadow-lg transition">
 							<p className="text-sm text-slate-500">Referral</p>
-							<p className="mt-2 text-2xl font-extrabold text-slate-900">15–25%</p>
+							<p className="mt-3 text-3xl font-extrabold text-slate-900">15–25%</p>
 							<p className="mt-1 text-xs text-slate-500">comisión por cierre</p>
 						</div>
 
-						<div className="p-4 bg-white border rounded-lg text-center hover:shadow-sm transition">
+						<div className="p-6 bg-white rounded-2xl border border-slate-100 text-center hover:shadow-lg transition">
 							<p className="text-sm text-slate-500">White-label</p>
-							<p className="mt-2 text-2xl font-extrabold text-slate-900">Margen acordado</p>
+							<p className="mt-3 text-3xl font-extrabold text-slate-900">Margen acordado</p>
 							<p className="mt-1 text-xs text-slate-500">según volumen y SLA</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* TESTIMONIOS & CASES */}
+			{/* TESTIMONIOS & CASES (refinado) */}
 			<section id="cases" className="max-w-6xl mx-auto px-6 pb-12">
-				<div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-slate-100">
+				<div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border border-slate-100">
 					<h2 className="text-2xl font-bold text-slate-900">Casos & testimonios</h2>
 					<p className="mt-2 text-slate-600">Historias donde partners escalaron su oferta gracias a Syncwave.</p>
 
-					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-						<blockquote className="p-4 border rounded-lg bg-gray-50">
-							<p className="text-sm text-slate-700">&quot;Al asociarnos con Syncwave pudimos cerrar integraciones que antes rechazábamos por falta de recursos técnicos. El partner pack y el POC nos ayudaron a ganar la venta.&quot;</p>
+					<div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5">
+						<blockquote className="p-6 rounded-2xl bg-slate-50 border-l-4 border-sky-500">
+							<p className="text-sm text-slate-700">“Al asociarnos con Syncwave pudimos cerrar integraciones que antes rechazábamos por falta de recursos técnicos. El partner pack y el POC nos ayudaron a ganar la venta.”</p>
 							<footer className="mt-3 text-xs text-slate-500">— Agencia integradora (LATAM)</footer>
 						</blockquote>
 
-						<div className="p-4 border rounded-lg">
+						<div className="p-6 rounded-2xl bg-white border border-slate-100">
 							<p className="text-sm text-slate-700">Resumen: integración n8n + servicio de soporte 24/7. Partner vendió paquete a 5 clientes en 3 meses.</p>
-							<div className="mt-3 text-xs text-slate-500">Resultado: ingresos recurrentes y relación comercial estable.</div>
+							<div className="mt-4 flex items-center justify-between">
+								<div className="text-xs text-slate-500">Resultado</div>
+								<div className="text-sm font-bold text-slate-900">Ingresos recurrentes & relación estable</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* FAQ */}
+			{/* FAQ (mejorado) */}
 			<section id="faq" className="max-w-6xl mx-auto px-6 pb-20">
-				<div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-slate-100">
+				<div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 border border-slate-100">
 					<h2 className="text-2xl font-bold text-slate-900">Preguntas frecuentes (Partners)</h2>
 
 					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700">
-						<details className="p-3 border rounded-lg">
-							<summary className="font-medium cursor-pointer">¿Cómo funciona el POC gratuito?</summary>
-							<div className="mt-2">Creamos una demo técnica para tu cliente en ~1 semana para validar factibilidad y ROI antes de firmar contrato.</div>
-						</details>
-
-						<details className="p-3 border rounded-lg">
-							<summary className="font-medium cursor-pointer">¿Cuál es la duración de la alianza mínima?</summary>
-							<div className="mt-2">No exigimos permanencia mínima; negociamos términos según modelo (referral, white-label o co-sell).</div>
-						</details>
-
-						<details className="p-3 border rounded-lg">
-							<summary className="font-medium cursor-pointer">¿Hay exclusividad por región?</summary>
-							<div className="mt-2">Podemos negociar exclusividad por país o segmento en acuerdos de volumen.</div>
-						</details>
-
-						<details className="p-3 border rounded-lg">
-							<summary className="font-medium cursor-pointer">¿Qué soporte brindan a partners?</summary>
-							<div className="mt-2">Soporte técnico, training, documentación y acceso a materiales comerciales y demos.</div>
-						</details>
+						{[
+							{ q: '¿Cómo funciona el POC gratuito?', a: 'Creamos una demo técnica para tu cliente en ~1 semana para validar factibilidad y ROI antes de firmar contrato.' },
+							{ q: '¿Cuál es la duración de la alianza mínima?', a: 'No exigimos permanencia mínima; negociamos términos según modelo (referral, white-label o co-sell).' },
+							{ q: '¿Hay exclusividad por región?', a: 'Podemos negociar exclusividad por país o segmento en acuerdos de volumen.' },
+							{ q: '¿Qué soporte brindan a partners?', a: 'Soporte técnico, training, documentación y acceso a materiales comerciales y demos.' },
+						].map((f) => (
+							<details key={f.q} className="p-3 rounded-lg border hover:shadow-sm transition">
+								<summary className="font-medium cursor-pointer">{f.q}</summary>
+								<div className="mt-2 text-sm text-slate-600">{f.a}</div>
+							</details>
+						))}
 					</div>
 				</div>
 			</section>
 
-			{/* BOTTOM CTA BANNER */}
+			{/* BOTTOM CTA BANNER (elegante) */}
 			<section className="fixed left-1/2 -translate-x-1/2 bottom-6 z-40 w-[min(980px,95%)]">
-				<div className="rounded-full bg-white/95 backdrop-blur-md shadow-lg px-4 py-3 border border-slate-100 flex items-center justify-between gap-4">
+				<div className="rounded-full bg-white/95 backdrop-blur-md shadow-2xl px-4 py-3 border border-slate-100 flex items-center justify-between gap-4">
 					<div className="flex items-center gap-4">
-						<div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-r from-sky-600 to-indigo-600 text-white">
+						<div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-lg">
 							<svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" aria-hidden>
 								<path d="M3 12h18M12 3v18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 							</svg>
@@ -359,7 +415,6 @@ export default function SocioPage() {
 							Solicitar POC gratis
 						</a>
 
-						{/* botón de descarga centralizado (usa downloadPack) */}
 						<button onClick={downloadPack} disabled={downloading} aria-busy={downloading} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 text-sm font-medium bg-white hover:shadow-sm transition disabled:opacity-60 disabled:cursor-wait">
 							{downloading ? (
 								<svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden>

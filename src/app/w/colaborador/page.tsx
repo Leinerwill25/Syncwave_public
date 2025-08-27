@@ -115,83 +115,170 @@ export default function ColaboradorPage() {
 			</section>
 
 			{/* PROCESS */}
+			{/* PROCESO SIMPLIFICADO (mejorado) */}
 			<section className="max-w-6xl mx-auto px-6 py-12">
-				<div className="bg-gradient-to-r from-white to-slate-50 rounded-2xl p-8 shadow-sm">
-					<h3 className="text-xl font-semibold text-slate-900">Proceso simplificado</h3>
-					<div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-						<div className="p-6 bg-white rounded-lg border shadow-sm">
-							<div className="text-slate-700 font-semibold">1. Descubrimiento</div>
-							<p className="mt-2 text-sm text-slate-600">Reunión inicial (30–60 min) para alinear objetivos, métricas y recursos.</p>
+				<div className="bg-white/95 rounded-3xl p-8 shadow-lg ring-1 ring-slate-100">
+					<div className="flex items-center justify-between gap-6">
+						<div>
+							<h3 className="text-2xl font-semibold text-slate-900">Proceso simplificado</h3>
+							<p className="mt-2 text-sm text-slate-600 max-w-prose">Flujo claro y profesional para que las alianzas empiecen a generar valor desde el primer día.</p>
 						</div>
-						<div className="p-6 bg-white rounded-lg border shadow-sm">
-							<div className="text-slate-700 font-semibold">2. POC</div>
-							<p className="mt-2 text-sm text-slate-600">Mini-proyecto para validar técnica y comercialmente antes de compromisos mayores.</p>
+
+						<div className="hidden md:flex items-center gap-4">
+							<div className="text-xs uppercase tracking-wide text-slate-500">Duración típica</div>
+							<div className="px-3 py-2 bg-slate-50 rounded-md text-sm font-medium text-slate-800">30–60 días (según alcance)</div>
 						</div>
-						<div className="p-6 bg-white rounded-lg border shadow-sm">
-							<div className="text-slate-700 font-semibold">3. Escalado</div>
-							<p className="mt-2 text-sm text-slate-600">Roadmap, SLAs y trabajo conjunto para generar crecimiento sostenido.</p>
-						</div>
+					</div>
+
+					<div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+						{[
+							{
+								num: '1',
+								title: 'Descubrimiento',
+								text: 'Reunión inicial (30–60 min) para alinear objetivos, métricas y recursos.',
+								accent: 'bg-gradient-to-br from-sky-500 to-indigo-600',
+							},
+							{
+								num: '2',
+								title: 'POC',
+								text: 'Mini-proyecto (1–4 semanas) para validar integración y fit comercial.',
+								accent: 'bg-gradient-to-br from-emerald-500 to-sky-500',
+							},
+							{
+								num: '3',
+								title: 'Escalado',
+								text: 'Roadmap, SLAs y trabajo conjunto para crecimiento sostenido y KPIs medibles.',
+								accent: 'bg-gradient-to-br from-violet-500 to-fuchsia-500',
+							},
+						].map((s) => (
+							<div key={s.title} className="relative p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow">
+								<div className="absolute -left-4 top-6">
+									<div className={`w-14 h-14 rounded-full flex items-center justify-center text-white font-semibold ${s.accent} ring-4 ring-white`}>{s.num}</div>
+								</div>
+
+								<div className="ml-12">
+									<div className="text-sm font-semibold text-slate-800">{s.title}</div>
+									<p className="mt-2 text-sm text-slate-600">{s.text}</p>
+
+									<div className="mt-4 flex items-center gap-3">
+										<span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-slate-50 text-slate-700 ring-1 ring-slate-100">
+											<svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+											</svg>
+											Hito claro
+										</span>
+										<span className="text-xs text-slate-400">Entregables definidos</span>
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
 
-			{/* CASES + BENEFITS */}
+			{/* CASES + BENEFITS (mejorado) */}
 			<section className="max-w-7xl mx-auto px-6 py-12">
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-					<div className="col-span-2 bg-white rounded-2xl p-6 shadow-md">
-						<h3 className="text-lg font-semibold text-slate-900">Casos prácticos</h3>
-						<p className="text-sm text-slate-600 mt-2">Ejemplos reales de colaboraciones y cómo se tradujeron en valor para ambas partes.</p>
+					<div className="col-span-2 bg-white rounded-3xl p-8 shadow-lg border border-slate-100">
+						<div className="flex items-start justify-between">
+							<div>
+								<h3 className="text-2xl font-semibold text-slate-900">Casos prácticos</h3>
+								<p className="text-sm text-slate-600 mt-2">Ejemplos reales de colaboraciones y resultados cuantificables.</p>
+							</div>
+							<div className="text-sm text-slate-500">Resultados verificados</div>
+						</div>
 
-						<div className="mt-6 space-y-4">
-							<article className="p-4 border rounded-lg">
-								<h4 className="font-semibold">Agencia de marketing + Syncwave</h4>
-								<p className="text-sm text-slate-600 mt-1">Campañas con landing pages optimizadas, integración de analytics y automatización de seguimiento. Resultado: +30% de conversión en campañas específicas.</p>
-								<p className="mt-2 text-xs text-slate-500">Modelo: revenue share / fee por proyecto</p>
+						<div className="mt-6 space-y-5">
+							<article className="p-6 rounded-2xl border border-slate-100 bg-slate-50/60 flex flex-col gap-3">
+								<div className="flex items-start justify-between">
+									<div>
+										<h4 className="font-semibold text-slate-900">Agencia de marketing + Syncwave</h4>
+										<p className="text-xs text-slate-500 mt-1">Modelo: revenue share / fee por proyecto</p>
+									</div>
+									<div className="text-right">
+										<div className="text-sm font-bold text-slate-900">+30%</div>
+										<div className="text-xs text-slate-500">Conversión</div>
+									</div>
+								</div>
+
+								<p className="text-sm text-slate-600">Campañas con landing pages optimizadas, integración de analytics y automatización de seguimiento — mejoras en conversión y CPAs reducidos.</p>
 							</article>
 
-							<article className="p-4 border rounded-lg">
-								<h4 className="font-semibold">E-commerce local + Syncwave</h4>
-								<p className="text-sm text-slate-600 mt-1">Implementación de e-commerce + automatización logística. Mejora en velocidad y reducción de errores en pedidos.</p>
-								<p className="mt-2 text-xs text-slate-500">Modelo: referral + POC</p>
+							<article className="p-6 rounded-2xl border border-slate-100 bg-white flex flex-col gap-3">
+								<div className="flex items-start justify-between">
+									<div>
+										<h4 className="font-semibold text-slate-900">E-commerce local + Syncwave</h4>
+										<p className="text-xs text-slate-500 mt-1">Modelo: referral + POC</p>
+									</div>
+									<div className="text-right">
+										<div className="text-sm font-bold text-slate-900">+40%</div>
+										<div className="text-xs text-slate-500">Eficiencia operativa</div>
+									</div>
+								</div>
+
+								<p className="text-sm text-slate-600">Implementación de e-commerce y automatización logística, optimizando tiempos de entrega y reduciendo errores de picking/stock.</p>
 							</article>
 						</div>
 					</div>
 
-					<aside className="bg-white rounded-2xl p-6 shadow-md">
+					<aside className="bg-white rounded-3xl p-8 shadow-lg border border-slate-100">
 						<h3 className="text-lg font-semibold text-slate-900">Beneficios para partners</h3>
-						<ul className="mt-3 text-sm text-slate-600 space-y-2">
-							<li>➡ Acceso a proyectos pagados y recurrentes.</li>
-							<li>➡ Co-marketing y exposición a nuestra base de clientes.</li>
-							<li>➡ Documentación técnica y soporte prioritario.</li>
-							<li>➡ Condiciones claras y escalado planificado.</li>
+						<p className="text-sm text-slate-600 mt-2">Ventajas que obtienen los partners que colaboran con Syncwave:</p>
+
+						<ul className="mt-4 space-y-3 text-sm">
+							{['Acceso a proyectos pagados y recurrentes', 'Co-marketing y exposición a nuestra base de clientes', 'Documentación técnica y soporte prioritario', 'Condiciones claras y escalado planificado'].map((b) => (
+								<li key={b} className="flex items-start gap-3">
+									<span className="mt-1 inline-flex items-center justify-center w-8 h-8 rounded-md bg-slate-50 ring-1 ring-slate-100">
+										<svg className="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+										</svg>
+									</span>
+									<span className="text-slate-700">{b}.</span>
+								</li>
+							))}
 						</ul>
+
+						<div className="mt-6 border-t pt-5">
+							<p className="text-xs text-slate-500">¿Necesitas un paquete a medida? Podemos definir condiciones específicas por proyecto (fees, revenue share o white-label).</p>
+						</div>
 					</aside>
 				</div>
 			</section>
 
-			{/* ONBOARDING CHECKLIST */}
+			{/* ONBOARDING CHECKLIST (mejorado) */}
 			<section className="max-w-5xl mx-auto px-6 pb-12">
-				<div className="bg-white rounded-2xl p-6 shadow-sm">
-					<h3 className="text-lg font-semibold text-slate-900">Checklist de onboarding</h3>
-					<div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-600">
-						<ul className="list-disc list-inside">
-							<li>Presentación (1 página): servicios y casos de éxito.</li>
-							<li>Contacto principal y rol (Slack/WhatsApp/email).</li>
-							<li>Plantilla de propuesta o pricing.</li>
-						</ul>
-						<ul className="list-disc list-inside">
-							<li>Accesos a staging/repos (solo si aplica).</li>
-							<li>Ejemplo de flujo de trabajo (hitos y entregables).</li>
-							<li>Contacto técnico para integraciones (webhooks, APIs).</li>
-						</ul>
+				<div className="bg-white rounded-3xl p-8 shadow-md border border-slate-100">
+					<div className="flex items-center justify-between">
+						<h3 className="text-lg font-semibold text-slate-900">Checklist de onboarding</h3>
+						<div className="text-sm text-slate-500">Checklist rápido para empezar</div>
+					</div>
+
+					<div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-slate-700">
+						{[
+							['Presentación (1 página): servicios y casos de éxito.', 'Contacto principal y rol (Slack/WhatsApp/email).', 'Plantilla de propuesta o pricing.'],
+							['Accesos a staging/repos (solo si aplica).', 'Ejemplo de flujo de trabajo (hitos y entregables).', 'Contacto técnico para integraciones (webhooks, APIs).'],
+						].map((col, i) => (
+							<ul key={i} className="space-y-3">
+								{col.map((item) => (
+									<li key={item} className="flex items-start gap-3">
+										<span className="mt-1 inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-50 ring-1 ring-slate-100 text-slate-700">
+											<svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+											</svg>
+										</span>
+										<span>{item}</span>
+									</li>
+								))}
+							</ul>
+						))}
 					</div>
 				</div>
 			</section>
 
-			{/* RESOURCES + CTA FOOTER */}
+			{/* RESOURCES + CTA FOOTER (mejorado) */}
 			<section className="max-w-7xl mx-auto px-6 pb-20">
-				<div className="bg-gradient-to-b from-white to-slate-50 rounded-2xl p-6 md:p-8 shadow-md">
-					<div className="md:flex md:items-center md:justify-between">
+				<div className="bg-gradient-to-b from-white to-slate-50 rounded-3xl p-6 md:p-8 shadow-lg border border-slate-100">
+					<div className="md:flex md:items-center md:justify-between gap-6">
 						<div>
 							<h3 className="text-xl font-semibold text-slate-900">¿Listo para colaborar?</h3>
 							<p className="text-sm text-slate-600 mt-2">Envíanos una propuesta o agenda una llamada de descubrimiento. Construyamos algo juntos.</p>

@@ -1,5 +1,7 @@
 import React from 'react';
 import CTAButtons from '@/components/CTAButtons';
+import CTAButtonstwo from '@/components/CTAButtonstwo';
+
 import Image from 'next/image';
 
 export default function ColaboradorPage() {
@@ -18,7 +20,7 @@ export default function ColaboradorPage() {
 							<p className="text-slate-100 max-w-xl">Potenciamos emprendimientos mediante alianzas win-win: desarrollo, marketing, integraciones y soporte técnico. Si tu agencia cubre marketing, nosotros convertimos leads en experiencias digitales.</p>
 
 							<div className="flex flex-col sm:flex-row sm:items-center gap-3">
-								<CTAButtons
+								<CTAButtonstwo
 									primary={{
 										text: '📩 Enviar propuesta',
 										href: 'https://api.whatsapp.com/send/?phone=584242070878&text=Hola%2C+quiero+colaborar+con+Syncwave',
